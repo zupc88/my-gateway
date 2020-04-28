@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: order
+          uri: http://order:8080
+          predicates:
+            - Path=/orders/**
+        - id: product
+          uri: http://order:8080
+          predicates:
+            - Path=/products/**
