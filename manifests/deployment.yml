@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: testgateway 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: testgateway 
+    spec:
+      containers:
+        - name: testgateway 
+          image: user05acr.azurecr.io/testgateway
+          ports:
+          - containerPort: 8080
