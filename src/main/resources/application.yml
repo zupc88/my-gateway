@@ -8,6 +8,6 @@ spring:
           predicates:
             - Path=/orders/**
         - id: product
-          uri: http://order:8080
+          uri: http://product:8080
           predicates:
-            - Path=/products/**
+            - Path=/product/**
