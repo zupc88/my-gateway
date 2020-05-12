@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
         - name: testgateway 
-          image: user05acr.azurecr.io/testgateway
+          image: ccteam4acr.azurecr.io/testgateway
           ports:
           - containerPort: 8080
